@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> Hello Home!fu
+     {% for ion in ions %}
+     	{{ ion.label }}
+     {% endfor %}
+ </h1>
+<div class="container">
+  <div class="btn-toolbar" role="toolbar">
+    <div class="btn-group btn-group-lg btn-group-justified btn-group-fill-height">
+     {% for ion in ions %}
+	<a href=" {% url 'details' ion.label %} " class="btn btn-default" role="button"> {{ ion.label }} </a>
+     {% endfor %}
+      <a href="#" class="btn btn-default" role="button">
+        <strong>Li</strong><br>
+        <span>Summary</span>
+      </a>
+      <a href="#" class="btn btn-default" role="button">
+        <strong>Be</strong><br>
+        <span>Very Long Summary</span>
+      </a>
+      <a href="#" class="btn btn-default" role="button">
+        <strong>Part D</strong><br>
+        <span>Summary</span>
+      </a>
+      <a href="#" class="btn btn-default" role="button">
+        <strong>Part E</strong><br>
+        <span>Long Summary That's Annoyingly Long</span>
+      </a>
+      <a href="#" class="btn btn-default" role="button">
+        <strong>Part F</strong><br>
+        <span>Summary</span>
+      </a>
+      <a href="#" class="btn btn-default" role="button">
+        <strong>Part G</strong><br>
+        <span>Very Long Summary</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content2 %}
+<table> 
+ <tr>
+  <th> OX </th>
+  <th> CN </th>
+  <th> r/A </th>
+  <th> err </th>
+ </tr>
+ {% if sel_ion.ox_m1 != None %}
+  {% if sel_ion.ox_m1_cn1 != None %}
+  <tr>
+   <td> {{ sel_ion.ox_m1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn1_r }} </td>
+   <td> {{ sel_ion.ox_m1_cn1_errors }} </td>
+  </tr>
+  {% endif %}
+  {% if sel_ion.ox_m1_cn2 != None %}
+  <tr>
+   <td> {{ sel_ion.ox_m1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn2 }} </td>
+   <td> {{ sel_ion.ox_m1_cn2_r }} </td>
+   <td> {{ sel_ion.ox_m1_cn2_errors }} </td>
+  </tr>
+  {% endif %}
+  {% if sel_ion.ox_m1_cn3 != None %}
+  <tr>
+   <td> {{ sel_ion.ox_m1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn3 }} </td>
+   <td> {{ sel_ion.ox_m1_cn3_r }} </td>
+   <td> {{ sel_ion.ox_m1_cn3_errors }} </td>
+  </tr>
+  {% endif %}
+  {% if sel_ion.ox_m1_cn4 != None %}
+  <tr>
+   <td> {{ sel_ion.ox_m1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn4 }} </td>
+   <td> {{ sel_ion.ox_m1_cn4_r }} </td>
+   <td> {{ sel_ion.ox_m1_cn4_errors }} </td>
+  </tr>
+  {% endif %}
+  {% if sel_ion.ox_m1_cn5 != None %}
+  <tr>
+   <td> {{ sel_ion.ox_m1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn5 }} </td>
+   <td> {{ sel_ion.ox_m1_cn5_r }} </td>
+   <td> {{ sel_ion.ox_m1_cn5_errors }} </td>
+  </tr>
+  {% endif %}
+  {% if sel_ion.ox_m1_cn6 != None %}
+  <tr>
+   <td> {{ sel_ion.ox_m1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn6 }} </td>
+   <td> {{ sel_ion.ox_m1_cn6_r }} </td>
+   <td> {{ sel_ion.ox_m1_cn6_errors }} </td>
+  </tr>
+  {% endif %}
+  {% if sel_ion.ox_m1_cn7 != None %}
+  <tr>
+   <td> {{ sel_ion.ox_m1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn7 }} </td>
+   <td> {{ sel_ion.ox_m1_cn7_r }} </td>
+   <td> {{ sel_ion.ox_m1_cn7_errors }} </td>
+  </tr>
+  {% endif %}
+  {% if sel_ion.ox_m1_cn8 != None %}
+  <tr>
+   <td> {{ sel_ion.ox_m1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn8 }} </td>
+   <td> {{ sel_ion.ox_m1_cn8_r }} </td>
+   <td> {{ sel_ion.ox_m1_cn8_errors }} </td>
+  </tr>
+  {% endif %}
+  {% if sel_ion.ox_m1_cn9 != None %}
+  <tr>
+   <td> {{ sel_ion.ox_m1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn9 }} </td>
+   <td> {{ sel_ion.ox_m1_cn9_r }} </td>
+   <td> {{ sel_ion.ox_m1_cn9_errors }} </td>
+  </tr>
+  {% endif %}
+  {% if sel_ion.ox_m1_cn10 != None %}
+  <tr>
+   <td> {{ sel_ion.ox_m1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn10 }} </td>
+   <td> {{ sel_ion.ox_m1_cn10_r }} </td>
+   <td> {{ sel_ion.ox_m1_cn10_errors }} </td>
+  </tr>
+  {% endif %}
+  {% if sel_ion.ox_m1_cn11 != None %}
+  <tr>
+   <td> {{ sel_ion.ox_m1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn11 }} </td>
+   <td> {{ sel_ion.ox_m1_cn11_r }} </td>
+   <td> {{ sel_ion.ox_m1_cn11_errors }} </td>
+  </tr>
+  {% endif %}
+  {% if sel_ion.ox_m1_cn12 != None %}
+  <tr>
+   <td> {{ sel_ion.ox_m1 }} </td>
+   <td> {{ sel_ion.ox_m1_cn12 }} </td>
+   <td> {{ sel_ion.ox_m1_cn12_r }} </td>
+   <td> {{ sel_ion.ox_m1_cn12_errors }} </td>
+  </tr>
+  {% endif %}
+ {% endif %}
+ {% if sel_ion.ox_m2 != None %}
+ <tr>
+  <td> {{ sel_ion.ox_m2 }} </td>
+  <td> {{ sel_ion.ox_m2_cn1 }} </td>
+  <td> {{ sel_ion.ox_m2_cn1_r }} </td>
+  <td> {{ sel_ion.ox_m2_cn1_errors }} </td>
+ </tr>
+ {% endif %}
+ {% if sel_ion.ox_m3 != None %}
+ <tr>
+  <td> {{ sel_ion.ox_m3 }} </td>
+  <td> {{ sel_ion.ox_m3_cn1 }} </td>
+  <td> {{ sel_ion.ox_m3_cn1_r }} </td>
+  <td> {{ sel_ion.ox_m3_cn1_errors }} </td>
+ </tr>
+ {% endif %}
+ {% if sel_ion.ox_m4 != None %}
+ <tr>
+  <td> {{ sel_ion.ox_m4 }} </td>
+  <td> {{ sel_ion.ox_m4_cn1 }} </td>
+  <td> {{ sel_ion.ox_m4_cn1_r }} </td>
+  <td> {{ sel_ion.ox_m4_cn1_errors }} </td>
+ </tr>
+ {% endif %}
+ {% if sel_ion.ox_p1 != None %}
+ <tr>
+  <td> {{ sel_ion.ox_p1 }} </td>
+  <td> {{ sel_ion.ox_p1_cn1 }} </td>
+  <td> {{ sel_ion.ox_p1_cn1_r }} </td>
+  <td> {{ sel_ion.ox_p1_cn1_errors }} </td>
+ </tr>
+ {% endif %}
+ {% if sel_ion.ox_p2 != None %}
+ <tr>
+  <td> {{ sel_ion.ox_p2 }} </td>
+  <td> {{ sel_ion.ox_p2_cn1 }} </td>
+  <td> {{ sel_ion.ox_p2_cn1_r }} </td>
+  <td> {{ sel_ion.ox_p2_cn1_errors }} </td>
+ </tr>
+ {% endif %}
+ {% if sel_ion.ox_p3 != None %}
+ <tr>
+  <td> {{ sel_ion.ox_p3 }} </td>
+  <td> {{ sel_ion.ox_p3_cn1 }} </td>
+  <td> {{ sel_ion.ox_p3_cn1_r }} </td>
+  <td> {{ sel_ion.ox_p3_cn1_errors }} </td>
+ </tr>
+ {% endif %}
+ {% if sel_ion.ox_p4 != None %}
+ <tr>
+  <td> {{ sel_ion.ox_p4 }} </td>
+  <td> {{ sel_ion.ox_p4_cn1 }} </td>
+  <td> {{ sel_ion.ox_p4_cn1_r }} </td>
+  <td> {{ sel_ion.ox_p4_cn1_errors }} </td>
+ </tr>
+ {% endif %}
+ {% if sel_ion.ox_p5 != None %}
+ <tr>
+  <td> {{ sel_ion.ox_p5 }} </td>
+  <td> {{ sel_ion.ox_p5_cn1 }} </td>
+  <td> {{ sel_ion.ox_p5_cn1_r }} </td>
+  <td> {{ sel_ion.ox_p5_cn1_errors }} </td>
+ </tr>
+ {% endif %}
+ {% if sel_ion.ox_p6 != None %}
+ <tr>
+  <td> {{ sel_ion.ox_p6 }} </td>
+  <td> {{ sel_ion.ox_p6_cn1 }} </td>
+  <td> {{ sel_ion.ox_p6_cn1_r }} </td>
+  <td> {{ sel_ion.ox_p6_cn1_errors }} </td>
+ </tr>
+ {% endif %}
+</table>
+{% endblock %}

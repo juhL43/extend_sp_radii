@@ -1,0 +1,622 @@
+{% extends 'base.html' %}
+{% load index %}
+
+{% block content %}
+<table class="pse">
+	<tr>
+		<td>
+			1 <br>
+			<a href=" {% url 'details' H.label %} " > {{ H.label }} </a>
+		</td>
+		<td>
+			{% comment %}
+			{% for ion in ions %}
+				{% if ion.label == 'F' %}
+					<a href=" {% url 'details' ion.label %} " > <sup>1</sup>{{ ion.label }} </a>
+				{% endif %}
+			 {% endfor %}
+			 {% endcomment %}
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+			2 <br>
+			He
+		</td>
+	</tr>
+	<tr>
+		<td>
+			3 <br>
+			<a href=" {% url 'details' Li.label %} " > {{ Li.label }} </a>
+		</td>
+		<td>
+			4 <br>
+			<a href=" {% url 'details' Be.label %} " > {{ Be.label }} </a>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+			5 <br>
+			<a href=" {% url 'details' B.label %} " > {{ B.label }} </a>
+		</td>
+		<td>
+			6 <br>
+			<a href=" {% url 'details' C.label %} " > {{ C.label }} </a>
+		</td>
+		<td>
+			7 <br>
+			<a href=" {% url 'details' N.label %} " > {{ N.label }} </a>
+		</td>
+		<td>
+			8 <br>
+			<a href=" {% url 'details' O.label %} " > {{ O.label }} </a>
+		</td>
+		<td>
+			9 <br>
+			<a href=" {% url 'details' F.label %} " > {{ F.label }} </a>
+		</td>
+		<td>
+			10 <br>
+			Ne
+		</td>
+	</tr>
+	<tr>
+		<td>
+			11 <br>
+			<a href=" {% url 'details' Na.label %} " > {{ Na.label }} </a>
+		</td>
+		<td>
+			12 <br>
+			<a href=" {% url 'details' Mg.label %} " > {{ Mg.label }} </a>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+			13 <br>
+			<a href=" {% url 'details' Al.label %} " > {{ Al.label }} </a>
+		</td>
+		<td>
+			14 <br>
+			<a href=" {% url 'details' Si.label %} " > {{ Si.label }} </a>
+		</td>
+		<td>
+			15 <br>
+			<a href=" {% url 'details' P.label %} " > {{ P.label }} </a>
+		</td>
+		<td>
+			16 <br>
+			<a href=" {% url 'details' S.label %} " > {{ S.label }} </a>
+		</td>
+		<td>
+			17 <br>
+			<a href=" {% url 'details' Cl.label %} " > {{ Cl.label }} </a>
+		</td>
+		<td>
+			18 <br>
+			Ar
+		</td>
+	</tr>
+	<tr>
+		<td>
+			19 <br>
+			<a href=" {% url 'details' K.label %} " > {{ K.label }} </a>
+		</td>
+		<td>
+			20 <br>
+			<a href=" {% url 'details' Ca.label %} " > {{ Ca.label }} </a>
+		</td>
+		<td>
+			21 <br>
+			<a href=" {% url 'details' Sc.label %} " > {{ Sc.label }} </a>
+		</td>
+		<td>
+			22 <br>
+			<a href=" {% url 'details' Ti.label %} " > {{ Ti.label }} </a>
+		</td>
+		<td>
+			23 <br>
+			<a href=" {% url 'details' V.label %} " > {{ V.label }} </a>
+		</td>
+		<td>
+			24 <br>
+			<a href=" {% url 'details' Cr.label %} " > {{ Cr.label }} </a>
+		</td>
+		<td>
+			25 <br>
+			<a href=" {% url 'details' Mn.label %} " > {{ Mn.label }} </a>
+		</td>
+		<td>
+			26 <br>
+			<a href=" {% url 'details' Fe.label %} " > {{ Fe.label }} </a>
+		</td>
+		<td>
+			29 <br>
+			<a href=" {% url 'details' Co.label %} " > {{ Co.label }} </a>
+		</td>
+		<td>
+			30 <br>
+			<a href=" {% url 'details' Ni.label %} " > {{ Ni.label }} </a>
+		</td>
+		<td>
+			31 <br>
+			<a href=" {% url 'details' Cu.label %} " > {{ Cu.label }} </a>
+		</td>
+		<td>
+			32 <br>
+			<a href=" {% url 'details' Zn.label %} " > {{ Zn.label }} </a>
+		</td>
+		<td>
+			33 <br>
+			<a href=" {% url 'details' Ga.label %} " > {{ Ga.label }} </a>
+		</td>
+		<td>
+			34 <br>
+			<a href=" {% url 'details' Ge.label %} " > {{ Ge.label }} </a>
+		</td>
+		<td>
+			35 <br>
+			<a href=" {% url 'details' As.label %} " > {{ As.label }} </a>
+		</td>
+		<td>
+			36 <br>
+			<a href=" {% url 'details' Se.label %} " > {{ Se.label }} </a>
+		</td>
+		<td>
+			37 <br>
+			<a href=" {% url 'details' Br.label %} " > {{ Br.label }} </a>
+		</td>
+		<td>
+			18 <br>
+			Ar
+		</td>
+	</tr>
+	<tr>
+		<td>
+			37 <br>
+			<a href=" {% url 'details' Rb.label %} " > {{ Rb.label }} </a>
+		</td>
+		<td>
+			38 <br>
+			<a href=" {% url 'details' Sr.label %} " > {{ Sr.label }} </a>
+		</td>
+		<td>
+			39 <br>
+			<a href=" {% url 'details' Y.label %} " > {{ Y.label }} </a>
+		</td>
+		<td>
+			40 <br>
+			<a href=" {% url 'details' Zr.label %} " > {{ Zr.label }} </a>
+		</td>
+		<td>
+			41 <br>
+			<a href=" {% url 'details' Nb.label %} " > {{ Nb.label }} </a>
+		</td>
+		<td>
+			42 <br>
+			<a href=" {% url 'details' Mo.label %} " > {{ Mo.label }} </a>
+		</td>
+		<td>
+			43 <br>
+			<a href=" {% url 'details' Tc.label %} " > {{ Tc.label }} </a>
+		</td>
+		<td>
+			44 <br>
+			<a href=" {% url 'details' Ru.label %} " > {{ Ru.label }} </a>
+		</td>
+		<td>
+			45 <br>
+			<a href=" {% url 'details' Rh.label %} " > {{ Rh.label }} </a>
+		</td>
+		<td>
+			46 <br>
+			<a href=" {% url 'details' Pd.label %} " > {{ Pd.label }} </a>
+		</td>
+		<td>
+			47 <br>
+			<a href=" {% url 'details' Ag.label %} " > {{ Ag.label }} </a>
+		</td>
+		<td>
+			48 <br>
+			<a href=" {% url 'details' Cd.label %} " > {{ Cd.label }} </a>
+		</td>
+		<td>
+			49 <br>
+			<a href=" {% url 'details' In.label %} " > {{ In.label }} </a>
+		</td>
+		<td>
+			50 <br>
+			<a href=" {% url 'details' Sn.label %} " > {{ Sn.label }} </a>
+		</td>
+		<td>
+			51 <br>
+			<a href=" {% url 'details' Sb.label %} " > {{ Sb.label }} </a>
+		</td>
+		<td>
+			52 <br>
+			<a href=" {% url 'details' Te.label %} " > {{ Te.label }} </a>
+		</td>
+		<td>
+			53 <br>
+			<a href=" {% url 'details' I.label %} " > {{ I.label }} </a>
+		</td>
+		<td>
+			54 <br>
+			Xe
+		</td>
+	</tr>
+	<tr>
+		<td>
+			55 <br>
+			<a href=" {% url 'details' Cs.label %} " > {{ Cs.label }} </a>
+		</td>
+		<td>
+			56 <br>
+			<a href=" {% url 'details' Ba.label %} " > {{ Ba.label }} </a>
+		</td>
+		<td>
+			71 <br>
+			<a href=" {% url 'details' Lu.label %} " > {{ Lu.label }} </a>
+		</td>
+		<td>
+			72 <br>
+			<a href=" {% url 'details' Hf.label %} " > {{ Hf.label }} </a>
+		</td>
+		<td>
+			73 <br>
+			<a href=" {% url 'details' Ta.label %} " > {{ Ta.label }} </a>
+		</td>
+		<td>
+			74 <br>
+			<a href=" {% url 'details' W.label %} " > {{ W.label }} </a>
+		</td>
+		<td>
+			75 <br>
+			<a href=" {% url 'details' Re.label %} " > {{ Re.label }} </a>
+		</td>
+		<td>
+			76 <br>
+			<a href=" {% url 'details' Os.label %} " > {{ Os.label }} </a>
+		</td>
+		<td>
+			77 <br>
+			<a href=" {% url 'details' Ir.label %} " > {{ Ir.label }} </a>
+		</td>
+		<td>
+			78 <br>
+			<a href=" {% url 'details' Pt.label %} " > {{ Pt.label }} </a>
+		</td>
+		<td>
+			79 <br>
+			<a href=" {% url 'details' Au.label %} " > {{ Au.label }} </a>
+		</td>
+		<td>
+			80 <br>
+			<a href=" {% url 'details' Hg.label %} " > {{ Hg.label }} </a>
+		</td>
+		<td>
+			81 <br>
+			<a href=" {% url 'details' Tl.label %} " > {{ Tl.label }} </a>
+		</td>
+		<td>
+			82 <br>
+			<a href=" {% url 'details' Pb.label %} " > {{ Pb.label }} </a>
+		</td>
+		<td>
+			83 <br>
+			<a href=" {% url 'details' Bi.label %} " > {{ Bi.label }} </a>
+		</td>
+		<td>
+			84 <br>
+			<a href=" {% url 'details' Po.label %} " > {{ Po.label }} </a>
+		</td>
+		<td>
+			85 <br>
+			<a href=" {% url 'details' At.label %} " > {{ At.label }} </a>
+		</td>
+		<td>
+			86 <br>
+			Rn
+		</td>
+	</tr>
+	<tr>
+		<td>
+			87 <br>
+			<a href=" {% url 'details' Fr.label %} " > {{ Fr.label }} </a>
+		</td>
+		<td>
+			88 <br>
+			<a href=" {% url 'details' Ra.label %} " > {{ Ra.label }} </a>
+		</td>
+		<td>
+			103 <br>
+			Lr
+		</td>
+		<td>
+			104 <br>
+			Rf
+		</td>
+		<td>
+			105 <br>
+			Db	
+		</td>
+		<td>
+			106 <br>
+			Sg
+		</td>
+		<td>
+			107 <br>
+			Bh
+		</td>
+		<td>
+			108 <br>
+			Hs
+		</td>
+		<td>
+			109 <br>
+			Mt
+		</td>
+		<td>
+			110 <br>
+			Ds
+		</td>
+		<td>
+			111 <br>
+			Rg
+		</td>
+		<td>
+			112 <br>
+			Cn
+		</td>
+		<td>
+			113 <br>
+			Nh
+		</td>
+		<td>
+			114 <br>
+			Fl
+		</td>
+		<td>
+			115 <br>
+			Mc
+		</td>
+		<td>
+			116 <br>
+			Lv
+		</td>
+		<td>
+			117 <br>
+			Ts
+		</td>
+		<td>
+			118 <br>
+			Og
+		</td>
+	</tr>
+</table>
+<br>
+<table class="pse">
+	<tr>
+		<td colspan="2">
+			Lanthanoids
+		</td>
+		<td>
+			57 <br>
+			<a href=" {% url 'details' La.label %} " > {{ La.label }} </a>
+		</td>
+		<td>
+			58 <br>
+			<a href=" {% url 'details' Ce.label %} " > {{ Ce.label }} </a>
+		</td>
+		<td>
+			59 <br>
+			<a href=" {% url 'details' Pr.label %} " > {{ Pr.label }} </a>
+		</td>
+		<td>
+			60 <br>
+			<a href=" {% url 'details' Nd.label %} " > {{ Nd.label }} </a>
+		</td>
+		<td>
+			61 <br>
+			<a href=" {% url 'details' Pm.label %} " > {{ Pm.label }} </a>
+		</td>
+		<td>
+			62 <br>
+			<a href=" {% url 'details' Sm.label %} " > {{ Sm.label }} </a>
+		</td>
+		<td>
+			63 <br>
+			<a href=" {% url 'details' Eu.label %} " > {{ Eu.label }} </a>
+		</td>
+		<td>
+			64 <br>
+			<a href=" {% url 'details' Gd.label %} " > {{ Gd.label }} </a>
+		</td>
+		<td>
+			65 <br>
+			<a href=" {% url 'details' Tb.label %} " > {{ Tb.label }} </a>
+		</td>
+		<td>
+			66 <br>
+			<a href=" {% url 'details' Dy.label %} " > {{ Dy.label }} </a>
+		</td>
+		<td>
+			67 <br>
+			<a href=" {% url 'details' Ho.label %} " > {{ Ho.label }} </a>
+		</td>
+		<td>
+			68 <br>
+			<a href=" {% url 'details' Er.label %} " > {{ Er.label }} </a>
+		</td>
+		<td>
+			69 <br>
+			<a href=" {% url 'details' Tm.label %} " > {{ Tm.label }} </a>
+		</td>
+		<td>
+			70 <br>
+			<a href=" {% url 'details' Yb.label %} " > {{ Yb.label }} </a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			Actinoids
+		</td>
+		<td>
+			89 <br>
+			<a href=" {% url 'details' Ac.label %} " > {{ Ac.label }} </a>
+		</td>
+		<td>
+			90 <br>
+			<a href=" {% url 'details' Th.label %} " > {{ Th.label }} </a>
+		</td>
+		<td>
+			91 <br>
+			<a href=" {% url 'details' Pa.label %} " > {{ Pa.label }} </a>
+		</td>
+		<td>
+			92 <br>
+			<a href=" {% url 'details' U.label %} " > {{ U.label }} </a>
+		</td>
+		<td>
+			93 <br>
+			<a href=" {% url 'details' Np.label %} " > {{ Np.label }} </a>
+		</td>
+		<td>
+			94 <br>
+			<a href=" {% url 'details' Pu.label %} " > {{ Pu.label }} </a>
+		</td>
+		<td>
+			95 <br>
+			<a href=" {% url 'details' Am.label %} " > {{ Am.label }} </a>
+		</td>
+		<td>
+			96 <br>
+			<a href=" {% url 'details' Cm.label %} " > {{ Cm.label }} </a>
+		</td>
+		<td>
+			97 <br>
+			<a href=" {% url 'details' Bk.label %} " > {{ Bk.label }} </a>
+		</td>
+		<td>
+			98 <br>
+			<a href=" {% url 'details' Cf.label %} " > {{ Cf.label }} </a>
+		</td>
+		<td>
+			99 <br>
+			Es
+		</td>
+		<td>
+			100 <br>
+			Fm
+		</td>
+		<td>
+			101 <br>
+			Md
+		</td>
+		<td>
+			102 <br>
+			No
+		</td>
+	</tr>
+</table>
+<br>
+
+{% endblock %}
+
+{% block content2 %}
+<table class="details"> 
+ <tr>
+  <th> OX </th>
+  <th> CN </th>
+  <th> r/A </th>
+  <th> err </th>
+ </tr>
+ {% for i in oxrange %}
+	 <tr class='separated'>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+	 </tr>
+	 {% for j in cnrange|index:i %}
+		 {% if sel_ion.cn|index:i|index:j != None %}
+			 <tr>
+				 <td> {{ sel_ion.ox|index:i }} </td>
+				 <td> {{ sel_ion.cn|index:i|index:j }} </td>
+				 <td> {{ sel_ion.r_ir|index:i|index:j }} </td>
+				 <td> {{ sel_ion.errors|index:i|index:j }} </td>
+			 </tr>
+		 {% endif %}
+	 {% endfor %}
+ {% endfor %}
+ <tr class='separated'>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td></td>
+ </tr>
+</table>
+{% endblock %}
