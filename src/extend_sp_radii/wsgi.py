@@ -11,7 +11,7 @@ import os
 
 print ('path')
 print(os.getcwd)
-print(os.path.dirname(os.path.abspath(__file__))
+print(os.path.dirname(os.path.abspath(__file__)))
 print ('===== sys.path / PYTHONPATH =====')
 for k in sorted(os.environ.keys()):
     v = os.environ[k]
