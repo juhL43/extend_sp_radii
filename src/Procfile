@@ -1,5 +1,6 @@
 #web: gunicorn extend_sp_radii.wsgi --log-file -
-web: gunicorn $WSGI_PATH:extend_sp_radii --log-file -
+#web: gunicorn $WSGI_PATH:extend_sp_radii --log-file -
+web: sh -c 'cd src && gunicorn extend_sp_radii.wsgi --log-file -'
 #web: python manage.py runserver 0.0.0.0:5000
 #web: env PYTHONPATH=$PYTHONPATH:$PWD/src gunicorn extend_sp_radii.wsgi:app --log-file -
 
