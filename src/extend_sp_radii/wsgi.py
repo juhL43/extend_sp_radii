@@ -12,7 +12,7 @@ import os
 print ('===== sys.path / PYTHONPATH =====')
 for k in sorted(os.environ.keys()):
     v = os.environ[k]
-        print ('%-30s %s' % (k,v[:70]))
+    print ('%-30s %s' % (k,v[:70]))
 
 from django.core.wsgi import get_wsgi_application
 
